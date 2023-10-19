@@ -8,11 +8,11 @@ weight: 1
 
 1. Navigate to [Azure portal ](https://portal.azure.com "Azure Portal") and login with credentials provided to you. 
 
-![portallogin1](../images/portallogin1.png)
+![portallogin1](./images/portallogin1.png)
 
 2. After entering the credentials, you can say yes for keep signed in. 
 
-![portallogin2](../images/portallogin2.png)
+![portallogin2](./images/portallogin2.png)
 
 3. After logging in you should see that you have access to subscription 
 
@@ -20,11 +20,11 @@ weight: 1
 
 4. In the search bar, type ```resource group``` , click on the resource group service. 
 
-![portallogin3_1](./images/portallogin3_1.png)
+![portallogin3_1](../images/portallogin3_1.png)
 
 5. You will see your resource group named vwanXX-training. XX is the lab number allocated to you.
 
-![portallogin4](./images/portallogin4.png)
+![portallogin4](../images/portallogin4.png)
 
 6. Click on the resource group to see the resources already deployed. 
 
