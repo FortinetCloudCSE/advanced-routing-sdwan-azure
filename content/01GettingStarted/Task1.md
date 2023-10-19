@@ -8,15 +8,15 @@ weight: 1
 
 1. Navigate to [Azure portal ](https://portal.azure.com "Azure Portal") and login with credentials provided to you. 
 
-![portallogin1](./images/portallogin1.png)
+![portallogin1](../images/portallogin1.png)
 
 2. After entering the credentials, you can say yes for keep signed in. 
 
-![portallogin2](./images/portallogin2.png)
+![portallogin2](../images/portallogin2.png)
 
 3. After logging in you should see that you have access to subscription 
 
-![portallogin3](./images/portallogin3.png)
+![portallogin3](../images/portallogin3.png)
 
 4. In the search bar, type ```resource group``` , click on the resource group service. 
 
