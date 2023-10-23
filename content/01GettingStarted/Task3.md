@@ -1,7 +1,7 @@
 ---
-title: "Task 2 - No VNET accesss"
+title: "Task 3 - No VNET accesss"
 menuTitle: "Confirm no access between VNETS"
-weight: 5
+weight: 10
 ---
 
 ## Task 2 Check to make sure there is no traffic between VNETS
@@ -12,7 +12,11 @@ weight: 5
 
 2. In the resources, note LinuxVM-Hub1Spoke1 IP(192.168.1.4) and LinuxVM-Hub1Spoke2 IP (172.16.1.4)
 
-![linuxvm1](../images/linuxvm1.png) ![linuxvm2](../images/linuxvm2.png)
+LinuxVM1               | LinuxVM2
+:-------------------------:|:-------------------------:
+![linuxvm1](../images/linuxvm1.png) |  ![linuxvm2](../images/linuxvm2.png)
+
+ 
 
 3. On the LinuxVM-Hub1Spoke1 view, scroll down to click on Serial console. 
 
