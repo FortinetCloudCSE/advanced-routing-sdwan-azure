@@ -1,10 +1,10 @@
 ---
-title: "Task 3 - No VNET accesss"
-menuTitle: "Confirm no access between VNETS"
+title: "Task 3 - Confirm no access between VNETS"
+menuTitle: "No VNET accesss"
 weight: 10
 ---
 
-## Task 2 Check to make sure there is no traffic between VNETS
+## Check to make sure there is no traffic between VNETS
 
 1. hub1spoke1-vnet with address space 192.168.1.0/24 and hub1spoke2-vnet with address space 172.16.1.0/24 have already been deployed.
 
