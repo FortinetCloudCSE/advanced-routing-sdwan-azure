@@ -1,33 +1,44 @@
 ---
-title: "Task 3 - Confirm no access between VNETS"
-menuTitle: "No VNET accesss"
+title: "Task 3 - License Fortigate's and enable FGSP"
+menuTitle: "Licensing and FGSP"
 weight: 10
 ---
 
-## Check to make sure there is no traffic between VNETS
+## License NVA's and enable FGSP
 
-1. hub1spoke1-vnet with address space 192.168.1.0/24 and hub1spoke2-vnet with address space 172.16.1.0/24 have already been deployed.
+1. Once the NVA's are deployed the next step is to license the NVA. We will be licensing the NVA's from Fortimanager. the command we will be using to license is below for any future reference. 
 
-![vnets1](../images/vnets1.png)
+```exec vm-license <token>```
 
-2. In the resources, note LinuxVM-Hub1Spoke1 IP(192.168.1.4) and LinuxVM-Hub1Spoke2 IP (172.16.1.4)
+The NVA's will reboot. 
 
-LinuxVM1               | LinuxVM2
-:-------------------------:|:-------------------------:
-![linuxvm1](../images/linuxvm1.png) |  ![linuxvm2](../images/linuxvm2.png)
+2. We need to enable FGSP on both FortiGate's since NVA's are depoyed in Active-Active setup and we need session sync. 
 
- 
+On FGT-A CLI, configure the peer IP in which this device will peer with:
 
-3. On the LinuxVM-Hub1Spoke1 view, scroll down to click on Serial console. 
+```
+config system standalone-cluster
+    config cluster-peer
+        edit 1
+            set peerip x.x.x.x (this will be the port2 Private IP address of peer FGT-B)
+        next
+    end
+    set standalone-group-id 1
+    set group-member-id 1
+end
+```
 
-![linuxvm1serial](../images/linuxvm1serial.png)
+On FGT-B CLI, configure the peer IP in which this device will peer with:
 
-4. Click on Serial Console to login to the Linux VM with username and password provided. 
+```
+config system standalone-cluster
+    config cluster-peer
+        edit 1
+            set peerip x.x.x.x (this will be the port2 Private IP address of peer FGT-A)
+        next
+    end
+    set standalone-group-id 1
+    set group-member-id 2
+end
+```
 
-5. Once logged ```ping 172.16.1.4``` shows no response. 
-
-![ping1](../images/ping1.png)
-
-6. Also confirm access to the internet ```ping 8.8.8.8``` and to get your Public ip address ```curl ipaddr.pub```.    Note: your IP address might be different from below. 
-
-![publicip](../images/publicip.png)
