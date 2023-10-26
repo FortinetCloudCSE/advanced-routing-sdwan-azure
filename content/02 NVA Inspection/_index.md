@@ -9,6 +9,6 @@ weight: 20
 
 1. Confirm vnet access to internet
 
-	#a. Why can’t the VNET linux hosts access the internet?
+	a. Why can’t the VNET linux hosts access the internet?
 	b. Joint solution review#
 
