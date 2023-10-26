@@ -1,6 +1,6 @@
 resource "azurerm_network_interface" "linuxvm-hub1spoke2-nic1" {
   for_each            = data.azurerm_resource_group.resourcegroup
-  name                = "linuxvm-hub1spoke2-nic1"
+  name                = "Linux-Spoke2_nic1"
   location            = each.value.location
   resource_group_name = each.value.name
 
@@ -13,7 +13,7 @@ resource "azurerm_network_interface" "linuxvm-hub1spoke2-nic1" {
 
 resource "azurerm_linux_virtual_machine" "linuxvm-hub1-spoke2" {
   for_each            = data.azurerm_resource_group.resourcegroup
-  name                = "linuxvm-hub1spoke2"
+  name                = "Linux-Spoke2_VM"
   resource_group_name = each.value.name
   location            = each.value.location
   size                = "Standard_F2"
