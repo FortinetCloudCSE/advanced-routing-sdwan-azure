@@ -1,7 +1,7 @@
 resource "azurerm_route_table" "protected-rt" {
   for_each            = data.azurerm_resource_group.resourcegroup
   depends_on          = [azurerm_virtual_machine.fgtvm]
-  name                = "BranchFGT-Protected-RouteTable"
+  name                = "Protected-Branch_RT"
   location            = each.value.location
   resource_group_name = each.value.name
 }

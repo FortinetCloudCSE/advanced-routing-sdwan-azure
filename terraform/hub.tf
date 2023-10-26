@@ -1,13 +1,13 @@
 resource "azurerm_virtual_wan" "vwan" {
   for_each            = data.azurerm_resource_group.resourcegroup
-  name                = "${each.value.name}-vwan"
+  name                = "vWAN${each.key}-${each.value.location}_VWAN"
   resource_group_name = each.value.name
   location            = each.value.location
 }
 
 resource "azurerm_virtual_hub" "vhub" {
   for_each            = data.azurerm_resource_group.resourcegroup
-  name                = "${each.value.name}-virtualhub"
+  name                = "vHub1_${each.value.location}_VHUB"
   resource_group_name = each.value.name
   location            = each.value.location
   virtual_wan_id      = azurerm_virtual_wan.vwan[each.key].id

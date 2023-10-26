@@ -1,7 +1,7 @@
 resource "azurerm_virtual_machine" "fgtvm" {
   for_each                     = data.azurerm_resource_group.resourcegroup
   zones                        = [1]
-  name                         = "fgtvm"
+  name                         = "FortiGate-Branch_VM"
   location                     = each.value.location
   resource_group_name          = each.value.name
   network_interface_ids        = [azurerm_network_interface.fgtport1[each.key].id, azurerm_network_interface.fgtport2[each.key].id]
@@ -41,7 +41,7 @@ resource "azurerm_virtual_machine" "fgtvm" {
   }
 
   os_profile {
-    computer_name  = "fgtvm"
+    computer_name  = "FortiGate-Branch_VM"
     admin_username = var.adminusername
     admin_password = var.adminpassword
 

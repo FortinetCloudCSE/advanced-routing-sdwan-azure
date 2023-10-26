@@ -2,7 +2,7 @@
 
 resource "azurerm_virtual_network" "fgtvnetwork" {
   for_each            = data.azurerm_resource_group.resourcegroup
-  name                = "${each.value.name}-fgtvnetwork"
+  name                = "Branch_VNET"
   address_space       = ["172.31.1.0/24"]
   location            = each.value.location
   resource_group_name = each.value.name
@@ -10,7 +10,7 @@ resource "azurerm_virtual_network" "fgtvnetwork" {
 
 resource "azurerm_subnet" "publicsubnet" {
   for_each             = data.azurerm_resource_group.resourcegroup
-  name                 = "${each.value.name}-publicSubnet"
+  name                 = "Public-Branch_SUBNET"
   resource_group_name  = each.value.name
   virtual_network_name = azurerm_virtual_network.fgtvnetwork[each.key].name
   address_prefixes     = ["172.31.1.0/28"]
@@ -18,7 +18,7 @@ resource "azurerm_subnet" "publicsubnet" {
 
 resource "azurerm_subnet" "privatesubnet" {
   for_each             = data.azurerm_resource_group.resourcegroup
-  name                 = "${each.value.name}-privateSubnet"
+  name                 = "Private-Branch_SUBNET"
   resource_group_name  = each.value.name
   virtual_network_name = azurerm_virtual_network.fgtvnetwork[each.key].name
   address_prefixes     = ["172.31.1.16/28"]
@@ -26,7 +26,7 @@ resource "azurerm_subnet" "privatesubnet" {
 
 resource "azurerm_subnet" "protectedsubnet" {
   for_each             = data.azurerm_resource_group.resourcegroup
-  name                 = "protectedSubnet"
+  name                 = "Protected-Branch_SUBNET"
   resource_group_name  = each.value.name
   virtual_network_name = azurerm_virtual_network.fgtvnetwork[each.key].name
   address_prefixes     = ["172.31.1.32/28"]
@@ -35,7 +35,7 @@ resource "azurerm_subnet" "protectedsubnet" {
 // Allocated Public IP
 resource "azurerm_public_ip" "FGTPublicIp" {
   for_each            = data.azurerm_resource_group.resourcegroup
-  name                = "FGTPublicIP"
+  name                = "FortiGate-Branch_PIP"
   location            = var.location
   resource_group_name = each.value.name
   allocation_method   = "Static"
@@ -45,7 +45,7 @@ resource "azurerm_public_ip" "FGTPublicIp" {
 //  Network Security Group
 resource "azurerm_network_security_group" "publicnetworknsg" {
   for_each            = data.azurerm_resource_group.resourcegroup
-  name                = "PublicNetworkSecurityGroup"
+  name                = "FortiGate-Branch-public_NSG"
   location            = var.location
   resource_group_name = each.value.name
 
@@ -64,7 +64,7 @@ resource "azurerm_network_security_group" "publicnetworknsg" {
 
 resource "azurerm_network_security_group" "privatenetworknsg" {
   for_each            = data.azurerm_resource_group.resourcegroup
-  name                = "PrivateNetworkSecurityGroup"
+  name                = "FortiGate-Branch-private_NSG"
   location            = each.value.location
   resource_group_name = each.value.name
 
