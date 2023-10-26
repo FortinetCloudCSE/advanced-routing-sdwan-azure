@@ -1,8 +1,10 @@
 ---
-title: "Manual Hugo Build"
-menuTitle: "Legacy Hugo Build"
+title: "IPSEC tunnel Build and BGP config"
+menuTitle: "IPSEC tunnel Build and BGP config"
 chapter: false
 weight: 50
 ---
 
-### Hugo Build
+### Try it yourself
+
+

@@ -1,12 +1,12 @@
 ---
-title: "Task 3 - License Fortigate's and enable FGSP"
+title: "Task 3 - Licensing and FGSP"
 menuTitle: "Licensing and FGSP"
 weight: 10
 ---
 
 ## License NVA's and enable FGSP
 
-1. Once the NVA's are deployed the next step is to license the NVA. We will be licensing the NVA's from Fortimanager. the command we will be using to license is below for any future reference. 
+1. Once the NVA's are deployed the next step is to license the NVA. Instructors will be licensing the NVA's from Fortimanager. The following command is reference only do not complete this as part of your lab. 
 
 ```exec vm-license <token>```
 
