@@ -35,7 +35,7 @@ weight: 5
 
 ![vwan8](../images/vwan8.png)
 
-9. In the NVA creation step2: Slect the VWAN hub in your Resource group - vwan**XX**-training-virtualhub, Fortigate admin username to **xperts** password to **Fortinet123$**, Fortigate prefix to vwan**XX**, Version to **7.4.0** and Fortimanger IP **IP address** Serial number **SN**
+9. In the NVA creation step2: Slect the VWAN hub in your Resource group - vwan**XX**-training-virtualhub, Fortigate admin username to **xperts** password to **Fortinet123$**, Fortigate prefix to vwan**XX**, Version to **7.4.0** and Fortimanger IP ```20.124.208.29``` Serial number ```FMVMELTM23000854```
 
 ![vwan9](../images/vwan9.png)
 
