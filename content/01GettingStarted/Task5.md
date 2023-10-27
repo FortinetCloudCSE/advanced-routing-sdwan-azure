@@ -75,7 +75,5 @@ Please follow [fortinetdocs ](https://docs.fortinet.com/document/fortigate-publi
 
 ![bgp3](../images/bgp3.png)
 
-> [!IMPORTANT]  
-> Make sure to click save if not routing policy will not be updated. 
-
+{{% notice info %}} Make sure to click save if not routing policy will not be updated.{{% /notice %}}
 

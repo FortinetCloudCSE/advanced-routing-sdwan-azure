@@ -14,7 +14,9 @@ The NVA's will reboot.
 
 2. We need to enable FGSP on both FortiGate's since NVA's are depoyed in Active-Active setup and we need session sync. 
 
-On FGT-A CLI, configure the peer IP in which this device will peer with:
+On FGT-A CLI, configure the peer IP in which this device will peer with.
+
+{{% notice warning %}}Please copy this code blocks into notepad and edit the PeerIP address, remove the comment before you paste it on FortiGate{{% /notice %}} 
 
 ```
 config system standalone-cluster
@@ -27,6 +29,13 @@ config system standalone-cluster
     set group-member-id 1
 end
 ```
+
+3. Once you paste the above content, you will see a prompt like below. Type Y. 
+
+    **vwanXX-sdfw-wdmc4mms~000 (standalone-cluster) # end**
+    **Changing standalone-group-id or group-member-id will potentially affect FGSP traffic.**
+    **Please first make sure the member is isolated from FGSP cluster properly.**
+    **Do you want to continue? (y/n)y**
 
 On FGT-B CLI, configure the peer IP in which this device will peer with:
 
@@ -41,4 +50,8 @@ config system standalone-cluster
     set group-member-id 2
 end
 ```
+
+
+
+
 

@@ -28,16 +28,16 @@ weight: 1
 
 6. Click on the resource group to see the resources already deployed. Before you move on to the next task, please read below: 
 
-    a. Your  assigned resource group has already been deployed with key resources that will help with this lab and save time. 
+    a. Your assigned resource group has already been deployed with key resources that will help with this lab and save time. 
     
     b. Please review and make sure all the following resources are deployed in your resource group.
 
-        a. Virtual WAN
-        b. Virtual VWAN Hub in East US
-        c. Spoke VNETS - Hub1Spoke1 VNET and Hub1Spoke2 VNET
-        d. Linux VM's in each of the spokes
-        e. Branch FortiGates
-        f. Branch VNETS
-        g. Branch Linux VM
-        h. Storage accounts for console access for each of the Virtual machines
+        a. vwanXX-EastUS_VWAN                                                      (QTY 1)
+        b. vHub1-EastUS_VHUB                                                       (QTY 1)
+        c. Spoke1-vHub1_VNET and Spoke2-vHub1_VNET                                 (QTY 2)
+        d. Linux-Spoke1-VM, Linux-Spoke2-VM                                        (QTY 2)
+        e. FortiGate-Branch-VM                                                     (QTY 1)
+        f. Branch_VNET                                                             (QTY 1)
+        g. Linux-Branch-VM                                                         (QTY 1)
+        h. Storage accounts for console access for each of the Virtual machines    (QTY 3)
 
