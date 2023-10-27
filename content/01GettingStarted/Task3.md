@@ -33,6 +33,7 @@ end
 3. Once you paste the above content, you will see a prompt like below. Type Y. 
 
     **vwanXX-sdfw-wdmc4mms~000 (standalone-cluster) # end**
+    
     **Changing standalone-group-id or group-member-id will potentially affect FGSP traffic.**
     **Please first make sure the member is isolated from FGSP cluster properly.**
     **Do you want to continue? (y/n)y**
