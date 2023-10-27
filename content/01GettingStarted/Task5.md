@@ -21,15 +21,14 @@ The private address space of the vWAN hub is needed to create a summary route fr
 3. Retrieving subnet information from FortiGate NVAs
 We will connect to the CLI for one of the managed FortiGate NVAs and look at port2 to locate and note the first IP address of the subnet on the FortiGate. The first IP address will be the local gateway for communicating with the virtual WAN hub routers.
 
+    To retrieve the subnet information from FortiGate NVAs:
+    connect to the CLI for one of the FortiGates by using SSH or by logging to Web UI and locating the IP address under Network >> interfaces. 
 
-To retrieve the subnet information from FortiGate NVAs:
-connect to the CLI for one of the FortiGates by using SSH or by logging to Web UI and locating the IP address under Network >> interfaces. 
+    In the CLI console, run the ```get system interface command```, and look at the results for port2.
 
-In the CLI console, run the ```get system interface command```, and look at the results for port2.
+    In the following example, the first IP of the subnet is 10.1.112.1.
 
-In the following example, the first IP of the subnet is 10.1.112.1.
-
-(In this example, the administrator's IP address is 10.1.112.5, and they have a /25 mask, which makes the network address 10.1.112.0, and the first IP, which Azure assigns to the virtual switch, is 10.1.112.1)
+    (In this example, the administrator's IP address is 10.1.112.5, and they have a /25 mask, which makes the network address 10.1.112.0, and the first IP, which Azure assigns to the virtual switch, is 10.1.112.1)
 
  ![bgp2](../images/bgp2.png)
 
