@@ -32,12 +32,12 @@ weight: 1
     
     b. Please review and make sure all the following resources are deployed in your resource group.
 
-    a. vwanXX-EastUS_VWAN                                                      (QTY 1)
-    b. vHub1-EastUS_VHUB                                                       (QTY 1)
-    c. Spoke1-vHub1_VNET and Spoke2-vHub1_VNET                                 (QTY 2)
-    d. Linux-Spoke1-VM, Linux-Spoke2-VM                                        (QTY 2)
-    e. FortiGate-Branch-VM                                                     (QTY 1)
-    f. Branch_VNET                                                             (QTY 1)
-    g. Linux-Branch-VM                                                         (QTY 1)
-    h. Storage accounts for console access for each of the Virtual machines    (QTY 3)
+        a. vwanXX-EastUS_VWAN                                                      (QTY 1)
+        b. vHub1-EastUS_VHUB                                                       (QTY 1)
+        c. Spoke1-vHub1_VNET and Spoke2-vHub1_VNET                                 (QTY 2)
+        d. Linux-Spoke1-VM, Linux-Spoke2-VM                                        (QTY 2)
+        e. FortiGate-Branch-VM                                                     (QTY 1)
+        f. Branch_VNET                                                             (QTY 1)
+        g. Linux-Branch-VM                                                         (QTY 1)
+        h. Storage accounts for console access for each of the Virtual machines    (QTY 3)
 
