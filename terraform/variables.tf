@@ -37,7 +37,7 @@ variable "fgtversion" {
 variable "adminusername" {
   description = "version of VM"
   type        = string
-  default     = "fortinetxperts"
+  default     = "fortixperts"
 }
 
 variable "adminpassword" {
