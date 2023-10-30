@@ -52,7 +52,7 @@ config system standalone-cluster
 end
 ```
 
-
+4. You will see same prompt like Step 3. Say Y again. 
 
 
 

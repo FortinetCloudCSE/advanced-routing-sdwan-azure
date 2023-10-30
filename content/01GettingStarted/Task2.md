@@ -23,7 +23,7 @@ weight: 5
 
 ![vwan5](../images/vwan5.png)
 
-6. Select FortiGate SDWAN and NGFW offering , Create. proceed to leave site to redirect to Marketplace. 
+6. Select fortinet-sdwan-and-ngfw , Create. proceed to leave site to redirect to Marketplace. 
 
 ![vwan6](../images/vwan6.png)
 
@@ -35,7 +35,7 @@ weight: 5
 
 ![vwan8](../images/vwan8.png)
 
-9. In the NVA creation step2: Slect the VWAN hub in your Resource group - vwan**XX**-training-virtualhub, Fortigate admin username to **xperts** password to **Fortinet123$**, Fortigate prefix to vwan**XX**, Version to **7.4.0** and Fortimanger IP ```20.124.208.29``` Serial number ```FMVMELTM23000854```
+9. In the NVA creation step2: Slect the VWAN hub in your Resource group - **vHub1_eastus_VHUB**, Fortigate admin username to ```fortixperts``` password to ```Fortixperts2023!```, Fortigate prefix to **vwan_XX_**, Version to **7.4.0** and Fortimanger IP ```20.124.208.29``` Serial number ```FMVMELTM23000854```
 
 ![vwan9](../images/vwan9.png)
 
