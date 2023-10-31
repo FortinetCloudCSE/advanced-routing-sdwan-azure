@@ -1,6 +1,6 @@
 ---
-title: "Task 5 - Verification"
-menuTitle: "Verification"
+title: "Task 6 - Verification"
+menuTitle: "Task 6 - Verification"
 weight: 30
 ---
 

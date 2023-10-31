@@ -1,6 +1,6 @@
 ---
 title: "Task 3 - Licensing and FGSP"
-menuTitle: "Licensing and FGSP"
+menuTitle: "Task 3 - Licensing and FGSP"
 weight: 10
 ---
 

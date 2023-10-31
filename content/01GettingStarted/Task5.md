@@ -1,6 +1,6 @@
 ---
 title: "Task 5 - BGP establishment,Confirm hub Routing Table"
-menuTitle: "BGP and more!"
+menuTitle: "Task 5 - BGP and more!"
 weight: 20
 ---
 

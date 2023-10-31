@@ -1,6 +1,6 @@
 ---
 title: "Task 1 - Portal Login "
-menuTitle: "Preflight check"
+menuTitle: "Task 1 - Preflight check"
 weight: 1
 ---
 
@@ -40,4 +40,3 @@ weight: 1
         f. Branch_VNET                                                             (QTY 1)
         g. Linux-Branch-VM                                                         (QTY 1)
         h. Storage accounts for console access for each of the Virtual machines    (QTY 3)
-

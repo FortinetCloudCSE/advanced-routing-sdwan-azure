@@ -1,6 +1,6 @@
 ---
 title: "Task 1 - East West Inspection "
-menuTitle: "Spoke to Spoke Traffic"
+menuTitle: "Task 1 - Spoke to Spoke Traffic"
 weight: 1
 ---
 

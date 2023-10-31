@@ -1,6 +1,6 @@
 ---
 title: "Task 2 - NVA deployment in VWAN hub"
-menuTitle: "NVA deployment"
+menuTitle: "Task 2 - NVA deployment"
 weight: 5
 ---
 

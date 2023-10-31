@@ -20,3 +20,6 @@ In this lab we will go over Secure VWAN Hub deployment. Azure Virtual WAN is a n
 
 We will be going over Secure VWAN hub deployment which includes Fortigates deployed in the VWAN hub and also get hands on experience to do East-West Inspection between VNETS peered to a Hub. Further we will also work on setting up IPSEC tunnels to Branch Fortigates and ping across your cloud environment from your Branch Linux VM.
 
+Here is the lab network diagram for reference:
+
+![diagram1](../images/networkdiagram.png)
