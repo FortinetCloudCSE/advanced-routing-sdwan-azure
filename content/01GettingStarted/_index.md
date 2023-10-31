@@ -1,5 +1,5 @@
 ---
-title: "Ch 1 Xperts 2023 - Secure vWAN Lab - Overview"
+title: "Ch 1 Secure vWAN Lab - Overview"
 menuTitle: "Ch 1: Overview"
 weight: 10
 ---
