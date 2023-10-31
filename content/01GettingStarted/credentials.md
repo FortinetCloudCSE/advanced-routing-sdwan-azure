@@ -1,6 +1,6 @@
 ---
-title: "Miscellaneous"
-menuTitle: "Lab Credentials"
+title: "Lab credentials"
+menuTitle: "Miscellaneous"
 weight: 1
 ---
 
