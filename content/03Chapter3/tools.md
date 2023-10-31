@@ -6,7 +6,7 @@ weight: 1
 
 Here are some troubleshooting commands that will be useful during the lab. 
 
-#FortiGate commands:
+## FortiGate Commands:
 
 **TCPDUMP on FortiGate:**
 
@@ -52,7 +52,7 @@ diagnose ip router bgp all enable
 diagnose ip router bgp level info
 diagnose debug enable
 ```
-#LINUX commands:
+## LINUX commands:
 
 **TCPDUMP**:
 

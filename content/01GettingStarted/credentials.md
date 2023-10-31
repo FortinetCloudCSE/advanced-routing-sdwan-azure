@@ -17,6 +17,6 @@ weight: 35
  
 **Branch FGT and NVAs:**
 
-- U:  Fortixperts
+- U:  fortixperts
 - P:  Fortixperts2023!
  
