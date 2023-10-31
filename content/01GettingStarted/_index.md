@@ -22,4 +22,4 @@ We will be going over Secure VWAN hub deployment which includes Fortigates deplo
 
 Here is the lab network diagram for reference:
 
-![networkdiagram1](../images/networkdiagram.png)
+![networkdiagram1](./images/networkdiagram.png)
