@@ -1,6 +1,6 @@
 ---
-title: "Ch 1 Getting Started with the deploymentt"
-menuTitle: "Ch 1: Basic Setup"
+title: "Ch 1 Xperts 2023 - Secure vWAN Lab - Overview"
+menuTitle: "Ch 1: Overview"
 weight: 10
 ---
 

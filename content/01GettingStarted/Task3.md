@@ -30,7 +30,7 @@ config system standalone-cluster
 end
 ```
 
-3. Once you paste the above content, you will see a prompt like below. Type Y. 
+3. Once you paste the above content, you will see a prompt like below. select Y. 
 
     **vwanXX-sdfw-wdmc4mms~000 (standalone-cluster) # end**
     
@@ -52,7 +52,7 @@ config system standalone-cluster
 end
 ```
 
-4. You will see same prompt like Step 3. Say Y again. 
+4. You will see same prompt like Step 3. Select Y again. 
 
 
 

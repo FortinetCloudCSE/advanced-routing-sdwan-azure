@@ -22,3 +22,5 @@ In this section you have two options:
 
 2. Accept you still have Junior Admin skills and only know how to work the copy and paste functions of your keyboard.By raising your hand, let us know your email we will email you the config. 
 
+3. Let us know when you have successfully completed a though h, and if you are interested in extra part of lab. 
+
