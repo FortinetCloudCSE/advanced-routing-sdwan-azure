@@ -1,7 +1,7 @@
 ---
 title: "Task 1 - Portal Login "
 menuTitle: "Task 1 - Preflight check"
-weight: 1
+weight: 5
 ---
 
 ## Login to Portal

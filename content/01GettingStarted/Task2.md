@@ -1,7 +1,7 @@
 ---
 title: "Task 2 - NVA deployment in VWAN hub"
 menuTitle: "Task 2 - NVA deployment"
-weight: 5
+weight: 10
 ---
 
 1. Click on VWAN in the resources that are already deployed. 

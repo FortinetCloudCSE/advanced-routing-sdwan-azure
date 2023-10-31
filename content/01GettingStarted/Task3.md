@@ -1,7 +1,7 @@
 ---
 title: "Task 3 - Licensing and FGSP"
 menuTitle: "Task 3 - Licensing and FGSP"
-weight: 10
+weight: 15
 ---
 
 ## License NVA's and enable FGSP
